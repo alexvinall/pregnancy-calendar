@@ -61,14 +61,14 @@ button:hover {
   background-color: #d81b60; /* darker pink */
 }
 
-a {
+.downloadButton {
   display: block;
   margin-top: 15px;
   color: #3f51b5;
   text-decoration: none;
 }
 
-a:hover {
+.downloadButton:hover {
   text-decoration: underline;
 }
 
