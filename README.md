@@ -2,6 +2,8 @@
 
 A personal and private pregnancy calendar. Input your current stage of pregnancy (weeks and days) to generate a downloadable pregnancy calendar showing the start of each week. You can import this into Google, iOS and other calendars.
 
+Use it here: [https://alexvinall.github.io/pregnancy-calendar/](https://alexvinall.github.io/pregnancy-calendar/)
+
 ## Features
 
  - 🗓️ Generates a calendar entry for the start of each week of pregnancy
