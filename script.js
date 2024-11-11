@@ -42,7 +42,7 @@ document.getElementById('pregnancy-form').addEventListener('submit', function(e)
 
       calendar.addEvent(
         weekTitle,
-        `Baby is the size of a ${fruitSizes[i % fruitSizes.length]}`,
+        `Baby is the size of a ${fruitSizes[i-1]}`,
         '',
         eventStartDate,
         eventStartDate
