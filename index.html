@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregnancy Calendar Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="viewport">
+    <div class="container">
+        <h1>Personal Pregnancy Calendar</h1>
+        <p>Create your personalized pregnancy calendar by entering your current pregnancy stage in weeks and days.</p>
+        <p>It's <strong>completely private</strong>: the calendar is generated locally on your device and nothing is stored.</p>
+        <form id="pregnancy-form">
+            <div class="input-group">
+                <label for="weeks">Weeks:</label>
+                <input type="number" id="weeks" required>
+            </div>
+            <div class="input-group">
+                <label for="days">Days:</label>
+                <input type="number" id="days" required>
+            </div>
+            <p>Once generated, you can import the resulting .ics file into your Gmail, iOS or other calendar as a new calendar. This allows you to delete the whole calendar if required.</p>
+            <button type="submit">Generate Calendar</button>
+            <a id="download-link" style="display:none;">Download Calendar</a>
+        </form>
+    </div>
+    <!-- Add FileSaver.js library, used to download the calendar file -->
+    <!-- Source: https://github.com/eligrey/FileSaver.js --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <!-- Add ICS.js library, used to generate the calendar -->
+    <!-- Source: https://github.com/nwcell/ics.js-->
+    <script src="ics.min.js"></script>
+    <script src="script.js"></script>
+    </div>
+    <footer>
+      <p>Made with love by Alex Vinall in 2024</p>
+    </footer>
+</body>
+</html>

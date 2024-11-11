@@ -1,0 +1,89 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3e5f5; /* light purple */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.viewport {
+  flex: 1;
+  justify-content: center;
+}
+
+.container {
+  background-color: #ffffff; /* white */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  color: #9c27b0; /* deep purple */
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  color: #3f51b5; /* blue */
+}
+
+input {
+  width: 30%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #e91e63; /* pink */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #d81b60; /* darker pink */
+}
+
+a {
+  display: block;
+  margin-top: 15px;
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 50px;
+  background-color: #f2f2f2; /* Light grey background for contrast */
+  padding: 10px 0;
+  font-size: 14px;
+  color: #666666; /* Slightly lighter grey for the text */
+  text-align: center;
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}
