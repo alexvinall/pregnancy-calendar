@@ -30,19 +30,22 @@ document.getElementById('pregnancy-form').addEventListener('submit', function(e)
       "honeydew melon", "honeydew melon", "honeydew melon", "small pumpkin" // 37-40
   ];
 
-  for (let i = 1; i <= 40; i++) {
+  for (let i = 0; i <= 40; i++) {
       const eventDate = new Date(startDate.getTime() + (i * 7 * 86400000));
       const eventStartDate = eventDate.toISOString().split('T')[0];
 
-      var weekTitle = `Week ${i}`;
-      if (i == 1) { weekTitle = "Week 1: Start of first trimester"};
-      if (i == 13) { weekTitle = "Week 13: Start of second trimester"};
-      if (i == 28) { weekTitle = "Week 28: Start of third trimester"};
-      if (i == 40) { weekTitle = "Week 40: Due Date"};
+      var weekTitle = `${i} Weeks`;
+      if (i == 0) { weekTitle = "Estimated start of last period"};
+      if (i == 13) { weekTitle = "13 Weeks: Start of second trimester"};
+      if (i == 28) { weekTitle = "28 Weeks: Start of third trimester"};
+      if (i == 40) { weekTitle = "40 Weeks: Due Date"};
+
+      var fruitSize = `Baby is the size of a ${fruitSizes[i-1]}`;
+      if (i < 4) { fruitSize = "" };
 
       calendar.addEvent(
         weekTitle,
-        `Baby is the size of a ${fruitSizes[i-1]}`,
+        fruitSize,
         '',
         eventStartDate,
         eventStartDate

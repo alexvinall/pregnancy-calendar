@@ -6,7 +6,7 @@ Use it here: [https://alexvinall.github.io/pregnancy-calendar/](https://alexvina
 
 ## Features
 
- - 🗓️ Generates a calendar entry for the start of each week of pregnancy
+ - 🗓️ Generates a calendar entry for each week of pregnancy
  - 📅 Estimates your due date
  - 🍓 Compares size of baby to a fruit for each week
  - 🏁 Highlights the start of each trimester
