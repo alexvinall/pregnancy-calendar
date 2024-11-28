@@ -53,9 +53,14 @@ document.getElementById('pregnancy-form').addEventListener('submit', function(e)
   }
 
   // Display the estimated due date to the user
-  const dueDateElement = document.createElement('p');
+  const container = document.querySelector('.container');
+  let dueDateElement = document.getElementById('due-date');
+  if (!dueDateElement) {
+    dueDateElement = document.createElement('p');
+    dueDateElement.id = 'due-date';
+    container.appendChild(dueDateElement);
+  }
   dueDateElement.textContent = `Your estimated due date is ${dueDateString}.`;
-  document.querySelector('.container').appendChild(dueDateElement);
 
   // Allow the user to download the calendar
   const downloadLink = document.getElementById('download-link');
